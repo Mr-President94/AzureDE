@@ -3,21 +3,27 @@ The objective of this use case is to facilitate the seamless transfer of telemet
 
 ### Overview:
 1. Data Source:
+
 • Third-Party IoT Device Vehicles are equipped with third-party IoT devices capable of collecting and transmitting telemetry data.
 • Telemetry data is sent in JSON format.
 
 2. Data Transmission: AWS Cloud
+
 • The telemetry data is initially sent to the AWS cloud, acting as an intermediary.
+
 3. Data Transfer: AWS to Azure Cloud
+
 • The primary task is to move data from the third-party AWS cloud to Azure cloud infrastructure.
 • This transfer process ensures that data remains securely and efficiently accessible to Customer.
 
 4. Data Validation: JSON Integrity
+   
 • Before the telemetry data is processed further, it undergoes validation.
 • The validation step checks for completeness and correct JSON formatting.
 • Any incomplete or incorrectly formatted JSON data is rejected.
 
 5. Data Storage: SQL Database
+
 • Validated telemetry data is stored in a SQL database.
 • This structured storage facilitates organized and efficient data management.
 
